@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FunctionComponent } from 'react';
 
 
-interface Iprops {
+interface IProps {
   name: string;
   animal: string;
   breed: string;
@@ -11,7 +11,7 @@ interface Iprops {
   id: number;
 }
 
-const Pet: FunctionComponent<Iprops> = (props) => {
+const Pet: FunctionComponent<IProps> = (props) => {
   const { name, animal, breed, images, location, id } = props;
 
   let hero = "http://pets-images.dev-apis.com/pets/none.jpg";
