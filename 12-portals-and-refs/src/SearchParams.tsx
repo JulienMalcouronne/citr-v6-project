@@ -3,11 +3,11 @@ import ThemeContext from "./ThemeContext";
 import useBreedList from "./useBreedList";
 import Results from "./Results";
 import { PetAPIResponse, Animal, Pet } from "./APIResponsesTypes";
-import { RouteComponentProps } from "react-router-dom";
+// import { RouteComponentProps } from "react-router-dom";
 
 const ANIMALS: Animal[] = ["bird", "cat", "dog", "rabbit", "reptile"];
 
-const SearchParams: FunctionComponent<RouteComponentProps> = () => {
+const SearchParams: FunctionComponent = () => {
   const [animal, updateAnimal] = useState("" as Animal);
   const [location, updateLocation] = useState("");
   const [breed, updateBreed] = useState("");
