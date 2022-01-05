@@ -1,10 +1,11 @@
-import { Component } from "react";
+import { Component, FunctionComponent } from "react";
 import ThemeContext from "./ThemeContext";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import Modal from "./Modal";
 import { withRouter, RouteComponentProps } from "react-router-dom";
 import { PetAPIResponse, Animal } from "./APIResponsesTypes";
+
 
 class Details extends Component<RouteComponentProps<{ id: string }>> {
   state = {
